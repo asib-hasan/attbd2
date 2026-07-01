@@ -30,18 +30,21 @@
       </div>
     </section>
 
-    <!-- Animated Counters Section -->
-    <section class="py-20 bg-[#0B2046] overflow-hidden relative">
-      <div class="absolute inset-0 bg-gradient-to-r from-[#051126] via-transparent to-[#051126] z-0"></div>
+    <!-- Smart Counter Section -->
+    <section class="relative bg-blue-700 py-16 overflow-hidden">
+      <!-- Dotted Pattern Overlay -->
+      <div class="absolute inset-0 bg-dots pointer-events-none opacity-50"></div>
+      
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div v-for="(stat, idx) in companyStats" :key="stat.label" class="text-center animate-fade-up" :class="`delay-${(idx + 1) * 100}`">
-            <div class="text-5xl md:text-6xl font-black text-white mb-3 drop-shadow-sm">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-white/20">
+          
+          <div v-for="(stat, idx) in companyStats" :key="stat.label" class="flex flex-col items-center justify-center pt-8 md:pt-0">
+            <div class="text-4xl md:text-5xl font-black text-white flex items-center mb-1 drop-shadow-sm">
               <AnimatedCounter :value="stat.value" :suffix="stat.suffix" :duration="2000" />
             </div>
-            <div class="font-bold text-blue-400 uppercase tracking-widest text-sm mb-1">{{ stat.label }}</div>
-            <div class="text-xs text-slate-300 font-medium">{{ stat.sub }}</div>
+            <div class="text-white text-xs md:text-sm font-bold uppercase tracking-widest text-center">{{ stat.label }}</div>
           </div>
+
         </div>
       </div>
     </section>
@@ -178,6 +181,13 @@
   </main>
 </template>
 
+<style scoped>
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.25) 2px, transparent 2px);
+  background-size: 24px 24px;
+}
+</style>
+
 <script setup lang="ts">
 import AnimatedCounter from '~/components/common/AnimatedCounter.vue'
 import PageHero from '~/components/common/PageHero.vue'
@@ -186,6 +196,8 @@ useSeoMeta({
   title: 'About ATT — Asian Traffic Technologies Ltd',
   description: 'Learn about Asian Traffic Technologies Ltd — our mission, vision, board of directors, and 25+ years of delivering ITS solutions in Bangladesh.',
 })
+
+
 
 const companyStats = [
   { value: 2002, label: 'Year Established', sub: 'Inception of ATT', suffix: '' },

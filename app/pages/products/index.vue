@@ -3,14 +3,14 @@
     <PageHero
       title="Our Products"
       subtitle="A complete line of traffic data collection, weigh-in-motion, access control, and traffic safety products for highways, ports, and urban infrastructure."
-      label="Product Range"
+      bgImage="/slider/new_heavy_engineering.png"
     />
 
-    <section class="py-24 bg-slate-950 border-t border-white/5">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-24 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <!-- Intro -->
         <div class="max-w-3xl mx-auto text-center mb-16 animate-fade-up">
-          <p class="text-slate-400 leading-relaxed text-lg">
+          <p class="text-slate-600 leading-relaxed text-lg">
             ATT supplies a complete line of traffic data collection and traffic safety products. Customers include State and Federal DOTs, Cities, Counties, Municipalities, and private businesses. Our knowledgeable product representatives will help you find exactly what suits your needs.
           </p>
         </div>

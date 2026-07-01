@@ -1,12 +1,12 @@
 <template>
-  <main class="bg-slate-950 min-h-screen">
+  <main class="bg-white min-h-screen">
     <PageHero
       title="Our Projects"
       subtitle="A track record of successful ITS project delivery for government agencies and private sector clients across Bangladesh."
-      label="Projects Portfolio"
+      bgImage="/slider/bd_toll_plaza.png"
     />
 
-    <section class="py-24 bg-slate-950 border-t border-white/5">
+    <section class="py-24 bg-slate-50 border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Filter tabs -->
         <div class="flex flex-wrap gap-4 mb-16 justify-center">
@@ -14,15 +14,15 @@
             v-for="cat in categories"
             :key="cat.key"
             :class="[
-              'px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest transition-all duration-300 border backdrop-blur-md',
+              'px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest transition-all duration-300 border',
               activeCategory === cat.key
-                ? 'bg-white/10 text-white border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.05)]'
-                : 'bg-slate-900/50 text-slate-400 border-white/5 hover:border-white/10 hover:text-white',
+                ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20'
+                : 'bg-white text-slate-600 border-slate-200 hover:border-blue-200 hover:text-blue-600 hover:shadow-sm',
             ]"
             @click="activeCategory = cat.key"
           >
             {{ cat.label }}
-            <span :class="['ml-2 text-xs font-medium', activeCategory === cat.key ? 'text-accent-400' : 'text-slate-500']">
+            <span :class="['ml-2 text-xs font-medium', activeCategory === cat.key ? 'text-blue-200' : 'text-slate-400']">
               ({{ cat.key === 'all' ? projects.length : projects.filter(p => p.category === cat.key).length }})
             </span>
           </button>
@@ -34,36 +34,35 @@
             v-for="project in filteredProjects"
             :key="project.slug"
             :to="`/projects/${project.slug}`"
-            class="group bg-slate-900/50 backdrop-blur-md border border-white/5 hover:border-accent-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.1)] transition-all duration-500 flex flex-col h-full relative overflow-hidden rounded-3xl"
+            class="group bg-white border border-slate-200 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500 flex flex-col h-full relative overflow-hidden rounded-3xl"
           >
-            <!-- Top accent line -->
-            <div :class="['absolute top-0 left-0 w-full h-1 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 z-10', project.color || 'bg-gradient-to-r from-accent-500 to-blue-500']"></div>
             
-            <div class="h-56 w-full bg-slate-950 relative overflow-hidden border-b border-white/5">
-              <img :src="project.image || '/slider/hero_toll_collection.png'" :alt="project.title" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
-              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/10 transition-colors duration-500"></div>
+            <div class="h-56 w-full bg-slate-100 relative overflow-hidden border-b border-slate-100">
+              <img :src="project.image || '/slider/hero_toll_collection.png'" :alt="project.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
             </div>
             
-            <div class="p-8 flex-1 flex flex-col">
+            <div class="p-8 flex-1 flex flex-col relative">
               <div class="mb-5">
-                <span class="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-accent-500 inline-block">
+                <span class="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 bg-blue-50 border border-blue-100 rounded-full text-blue-700 inline-block">
                   {{ categoryLabel(project.category) }}
                 </span>
               </div>
               
-              <h3 class="text-xl font-black text-white mb-4 group-hover:text-accent-400 transition-colors uppercase tracking-wide leading-snug">{{ project.title }}</h3>
-              <p class="text-sm text-slate-400 mb-8 flex-1 leading-relaxed">{{ project.shortDesc }}</p>
+              <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors uppercase tracking-wide leading-snug">{{ project.title }}</h3>
+              <p class="text-sm text-slate-600 mb-8 flex-1 leading-relaxed">{{ project.shortDesc }}</p>
               
-              <div class="pt-5 border-t border-white/5 flex flex-col gap-3 mt-auto">
+              <div class="pt-5 border-t border-slate-100 flex flex-col gap-3 mt-auto">
                 <div class="flex items-start justify-between text-xs font-bold text-slate-500 uppercase tracking-wider">
                   <span>Client:</span>
-                  <span class="text-slate-300 text-right max-w-[60%] leading-tight">{{ project.client }}</span>
+                  <span class="text-slate-800 text-right max-w-[60%] leading-tight">{{ project.client }}</span>
                 </div>
                 <div class="flex items-center justify-between text-xs font-bold text-slate-500 uppercase tracking-wider">
                   <span>Year:</span>
-                  <span class="text-accent-500">{{ project.year }}</span>
+                  <span class="text-blue-600">{{ project.year }}</span>
                 </div>
               </div>
+              <!-- Standard Animated Bottom Border Line -->
+              <div class="absolute bottom-0 left-0 h-[6px] bg-blue-600 w-0 group-hover:w-full transition-all duration-500 ease-out z-20"></div>
             </div>
           </NuxtLink>
         </div>
