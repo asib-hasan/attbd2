@@ -1,6 +1,6 @@
 <template>
   <!-- Mission Section -->
-  <section class="py-24 bg-white relative z-20 border-t border-slate-100">
+  <section class="pt-12 pb-8 md:pt-24 md:pb-12 bg-white relative z-20 border-t border-slate-100">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-slate-50 rounded-[40px] border border-slate-200 p-8 lg:p-16 relative overflow-hidden shadow-sm">
         <!-- Background Blur -->

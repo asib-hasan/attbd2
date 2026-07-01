@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 bg-white relative">
+  <section class="pt-8 pb-12 md:pt-12 md:pb-24 bg-white relative">
     <div class="text-center mb-16">
       <h2 v-animate="'animate-fade-up'" class="text-3xl md:text-4xl font-bold text-[#0B2046]">
         Some Of Our Work

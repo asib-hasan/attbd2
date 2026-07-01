@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 bg-slate-50 relative z-20">
+  <section class="pt-12 md:pt-24 pb-0 bg-slate-50 relative z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
       <div v-animate="'animate-fade-up'" class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full mb-6 shadow-sm">
         <span class="w-2 h-2 rounded-full bg-blue-600"></span>
@@ -11,7 +11,7 @@
     </div>
 
     <!-- Banners Container -->
-    <div class="w-full flex flex-col pb-24">
+    <div class="w-full flex flex-col">
       
       <!-- Banner 1: Toll Management -->
       <div class="relative w-full h-[400px] lg:h-[450px] overflow-hidden group">
