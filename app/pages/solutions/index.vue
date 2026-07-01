@@ -3,17 +3,15 @@
     <PageHero
       title="Our Solutions"
       subtitle="Intelligent Transportation Systems tailored for Bangladesh's roads, bridges, ports and infrastructure — from concept through to long-term maintenance."
-      label="ITS Solutions"
+      bgImage="/slider/new_toll_plaza.png"
     />
 
-    <section class="bg-slate-950">
-      <AlternatingGrid 
-        title="Our Solutions" 
-        highlight="Explore" 
-        description="We offer end-to-end ITS solutions, from toll management to ship building and weighing infrastructure."
-        :items="formattedSolutions" 
-      />
-    </section>
+    <AlternatingGrid 
+      title="Our Solutions" 
+      highlight="Explore" 
+      description="We offer end-to-end ITS solutions, from toll management to ship building and weighing infrastructure."
+      :items="formattedSolutions" 
+    />
 
 
   </div>
@@ -32,9 +30,11 @@ const formattedSolutions = computed(() => {
   return solutions.map((s, index) => {
     // Provide a default image based on index if none exists
     const defaultImages = [
-      '/slider/hero_traffic_system.png',
-      '/slider/hero_toll_collection.png',
-      '/slider/hero_access_security.png',
+      '/slider/photorealistic_toll_system.png',
+      '/projects/2.png',
+      '/projects/3.png',
+      '/projects/4.png',
+      '/projects/5.png',
     ]
     const imgUrl = s.image || defaultImages[index % defaultImages.length]
 

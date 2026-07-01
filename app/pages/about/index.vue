@@ -142,8 +142,13 @@
             <div class="bg-white rounded-[2rem] p-6 pt-0 flex flex-col items-center h-full border border-slate-200 hover:border-blue-200 hover:bg-blue-50/50 transition-all duration-500 shadow-lg hover:shadow-xl">
               
               <!-- Protruding Image -->
-              <div class="w-48 h-56 -mt-12 mb-6 rounded-2xl overflow-hidden shadow-xl relative z-10 group-hover:-translate-y-3 transition-all duration-500 ring-4 ring-white group-hover:ring-blue-100">
-                <img :src="`/People_images/${member.image}`" :alt="member.name" class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700" />
+              <div class="w-48 h-56 -mt-12 mb-6 rounded-2xl relative z-10 group-hover:-translate-y-2 transition-all duration-300 mx-auto shadow-xl">
+                <div class="w-full h-full rounded-2xl overflow-hidden bg-white relative">
+                  <img :src="`/People_images/${member.image}`" :alt="member.name" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                  
+                  <!-- Standard animated bottom border line -->
+                  <div class="absolute bottom-0 left-0 h-[6px] bg-blue-600 w-0 group-hover:w-full transition-all duration-500 ease-out z-20"></div>
+                </div>
               </div>
               
               <!-- Content -->
