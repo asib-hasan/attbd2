@@ -21,7 +21,7 @@ export const products: Product[] = [
     description: `ATT's traffic counters and classifiers are the go-to instruments for transport authorities requiring accurate vehicle count and classification data. Using pneumatic road tubes, inductive loops, or infrared sensors, these portable and permanent devices record vehicle volumes, speeds, and vehicle class (motorcycle, car, truck, bus, etc.) with high accuracy. Data is stored internally and can be downloaded wirelessly or via USB for analysis using ATT's reporting software.`,
     icon: 'Activity',
     color: 'from-blue-500 to-blue-700',
-    image: '/product.png',
+    image: '/products/counters_classifiers.png',
     content: `
       <h3>Advanced Traffic Classification</h3>
       <p>ATT's traffic counters and classifiers are the go-to instruments for transport authorities requiring accurate vehicle count and classification data. Using pneumatic road tubes, inductive loops, or infrared sensors, these portable and permanent devices record vehicle volumes, speeds, and vehicle class with high accuracy.</p>
@@ -69,7 +69,7 @@ export const products: Product[] = [
       'Bridge load monitoring',
       'Toll enforcement',
     ],
-    image: '/smart_traffic_solution.png',
+    image: '/products/axle_sensors.png',
   },
   {
     id: 3,
@@ -93,7 +93,7 @@ export const products: Product[] = [
       'Construction site vehicle monitoring',
       'Research & survey programs',
     ],
-    image: '/projects/weigh-bridge.png',
+    image: '/products/portable_weigh_pads.png',
   },
   {
     id: 4,
@@ -165,7 +165,7 @@ export const products: Product[] = [
       'Toll plazas (weight-based tolling)',
       'Research & pavement studies',
     ],
-    image: '/product.png',
+    image: '/products/wim_controller.png',
   },
   {
     id: 7,
@@ -189,7 +189,7 @@ export const products: Product[] = [
       'Industrial process control',
       'Remote site power management',
     ],
-    image: '/service.png',
+    image: '/products/electronic_pumps.png',
   },
   {
     id: 8,
@@ -213,7 +213,7 @@ export const products: Product[] = [
       'Off-grid CCTV systems',
       'Solar toll booths',
     ],
-    image: '/slider/hero_traffic_system.png',
+    image: '/products/solar_system.png',
   },
   {
     id: 9,
@@ -237,6 +237,6 @@ export const products: Product[] = [
       'Toll rate information boards',
       'Queue length indicators',
     ],
-    image: '/slider/hero_toll_collection.png',
+    image: '/products/remote_display.png',
   },
 ]

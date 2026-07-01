@@ -2,8 +2,9 @@
   <NuxtLink :to="link" class="group flex flex-col bg-white border border-slate-200 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500 rounded-3xl relative overflow-hidden h-full">
     
     <!-- Image Area -->
-    <div class="h-64 bg-slate-50 flex items-center justify-center p-8 overflow-hidden relative border-b border-slate-100">
-      <img :src="image" :alt="title" class="w-full h-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-700 ease-out drop-shadow-sm" />
+    <div class="h-64 sm:h-72 bg-slate-100 overflow-hidden relative border-b border-slate-100">
+      <img :src="image" :alt="title" class="w-full h-full object-cover relative z-10 group-hover:scale-110 transition-transform duration-700 ease-out" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent z-20 pointer-events-none"></div>
     </div>
 
     <!-- Content Area -->
