@@ -20,7 +20,7 @@ export const services: Service[] = [
     description: `ATT's installation teams bring decades of experience installing complex traffic and toll infrastructure across Bangladesh. Our teams follow strict quality procedures ensuring every installation meets the highest standards while minimizing disruption to ongoing traffic operations.`,
     icon: 'Wrench',
     color: 'from-blue-600 to-blue-800',
-    image: '/service.png',
+    image: '/services/service_installation.png',
     content: `
       <h3>Expert Installation & Commissioning</h3>
       <p>ATT's installation teams bring decades of experience installing complex traffic and toll infrastructure across Bangladesh. Our teams follow strict quality procedures ensuring every installation meets the highest standards while minimizing disruption to ongoing traffic operations.</p>
@@ -40,6 +40,7 @@ export const services: Service[] = [
     description: `ATT offers comprehensive Annual Maintenance Contracts (AMC) that include scheduled preventive maintenance visits, 24/7 emergency response, spare parts management, and performance reporting to maximize system uptime.`,
     icon: 'Settings',
     color: 'from-green-600 to-emerald-800',
+    image: '/services/service_maintenance.png',
     highlights: ['Annual Maintenance Contracts', 'Preventive maintenance schedules', '24/7 emergency response', 'Spare parts management', 'Remote diagnostics', 'Monthly reporting'],
   },
   {
@@ -50,6 +51,7 @@ export const services: Service[] = [
     description: `ATT's Civil Works division undertakes large-scale construction projects including bridges, culverts, roads, and high-rise buildings. We have successfully completed structural projects for RAJUK, LGED, RHD, and various Port Authorities across Bangladesh.`,
     icon: 'Building2',
     color: 'from-amber-500 to-orange-700',
+    image: '/services/service_civil.png',
     highlights: ['Bridge & Road Construction', 'Government infrastructure projects', 'Real estate development', 'River bank protection', 'Educational facilities construction', 'Turnkey project delivery'],
   },
   {
@@ -60,6 +62,7 @@ export const services: Service[] = [
     description: `ATT supplies and installs ship rescue and marine safety equipment for vessel operators, port authorities, and the Bangladesh Coast Guard. All products comply with international maritime regulations.`,
     icon: 'Anchor',
     color: 'from-cyan-600 to-teal-800',
+    image: '/services/service_rescue.png',
     highlights: ['Life-saving apparatus', 'Distress signaling systems', 'Emergency communication', 'SOLAS-compliant products', 'Installation & commissioning', 'Crew training support'],
   },
   {
@@ -70,6 +73,7 @@ export const services: Service[] = [
     description: `ATT operates cargo vessels providing reliable freight transport across Bangladesh's inland waterway network, offering charter and scheduled services to manufacturers, traders, and government agencies.`,
     icon: 'Ship',
     color: 'from-slate-600 to-slate-800',
+    image: '/services/service_cargo.png',
     highlights: ['Inland waterway transport', 'Charter & scheduled services', 'Experienced licensed crew', 'Cargo safety protocols', 'Competitive freight rates', 'Reliable schedules'],
   },
   {
@@ -80,6 +84,7 @@ export const services: Service[] = [
     description: `ATT operates certified oil tanker vessels for the safe transportation of petroleum products including diesel, furnace oil, and lubricants across Bangladesh's waterways, meeting all regulatory requirements.`,
     icon: 'Fuel',
     color: 'from-red-600 to-rose-800',
+    image: '/services/service_tanker.png',
     highlights: ['Petroleum product transport', 'Certified tank vessels', 'Spill prevention systems', 'Regulatory compliance', 'Insurance & documentation', 'Port coordination'],
   },
   {
@@ -90,6 +95,7 @@ export const services: Service[] = [
     description: `Shams Navigation is ATT's dedicated carrier service brand providing freight forwarding and navigation services, leveraging our fleet and deep knowledge of Bangladesh's waterway network.`,
     icon: 'Navigation',
     color: 'from-indigo-600 to-blue-800',
+    image: '/services/service_navigation.png',
     highlights: ['Freight forwarding', 'Full cargo management', 'Port handling & documentation', 'Last-mile delivery', 'Multi-modal transport', 'Real-time tracking'],
   },
 ]
