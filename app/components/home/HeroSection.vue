@@ -12,9 +12,9 @@
         <source src="/Video/video1.mp4" type="video/mp4" />
       </video>
       
-      <!-- Lighter Gradient Overlay to let the video shine through -->
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/40 to-transparent pointer-events-none"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none"></div>
+      <!-- Dark Gradient Overlay to let the video shine through and provide contrast -->
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-transparent pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
     </div>
 
     <!-- Content -->
@@ -24,7 +24,7 @@
         
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] tracking-tight mb-8 animate-fade-up delay-100">
           Transforming<br />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-300 to-slate-500">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
             Nations.
           </span>
         </h1>
@@ -34,13 +34,13 @@
         </p>
         
         <div class="flex flex-wrap gap-4 animate-fade-up delay-300">
-          <NuxtLink to="/solutions" class="px-8 py-4 bg-white text-slate-950 font-bold rounded-full hover:bg-slate-200 transition-colors shadow-lg shadow-white/10 flex items-center gap-2">
+          <NuxtLink to="/solutions" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-500 transition-colors shadow-lg shadow-blue-500/20 flex items-center gap-2">
             Discover Solutions
             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </NuxtLink>
-          <NuxtLink to="/contact" class="px-8 py-4 bg-white/5 backdrop-blur-md text-white font-bold rounded-full hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2">
+          <NuxtLink to="/contact" class="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold rounded-full hover:bg-white/20 transition-all flex items-center gap-2">
             Get in Touch
           </NuxtLink>
         </div>

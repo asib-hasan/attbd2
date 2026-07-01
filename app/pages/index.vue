@@ -1,11 +1,11 @@
 <template>
-  <main class="bg-slate-950">
+  <main class="bg-slate-50">
     <HeroSection />
     <VisualVibeSection />
     <FocusAreasSection />
     <MissionSection />
 
-    <TestimonialsSection />
+    <OurWorkSection />
 
     <BlogSection />
     <ClientsSection />
