@@ -31,7 +31,7 @@
     </section>
 
     <!-- Smart Counter Section -->
-    <section class="relative bg-blue-700 py-16 overflow-hidden">
+    <section class="relative bg-[#0B2046] py-16 overflow-hidden">
       <!-- Dotted Pattern Overlay -->
       <div class="absolute inset-0 bg-dots pointer-events-none opacity-50"></div>
       

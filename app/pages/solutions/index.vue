@@ -7,17 +7,17 @@
     />
 
     <!-- Animated Industry Specializations Section -->
-    <section class="py-24 bg-slate-50 overflow-hidden relative border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center">
+    <section class="pt-12 pb-8 md:pt-24 md:pb-16 bg-slate-50 overflow-hidden relative border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 md:mb-16 text-center">
         <div class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-3">Serving Industries</div>
         <h2 class="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">Industry Specializations</h2>
       </div>
 
-      <div class="relative w-full flex flex-col gap-6 py-4">
+      <div class="relative w-full flex flex-col gap-4 md:gap-6 py-4">
         <!-- Row 1: Left -->
         <div class="flex whitespace-nowrap animate-marquee-left hover:pause-animation w-max">
-          <div v-for="i in 3" :key="`r1-${i}`" class="flex gap-6 pr-6">
-            <span v-for="industry in row1" :key="industry" class="px-8 py-4 bg-white rounded-full text-slate-900 font-bold shadow-sm border border-slate-100 text-lg flex items-center justify-center min-w-[200px]">
+          <div v-for="i in 3" :key="`r1-${i}`" class="flex gap-4 md:gap-6 pr-4 md:pr-6">
+            <span v-for="industry in row1" :key="industry" class="px-5 py-2.5 md:px-8 md:py-4 bg-white rounded-full text-slate-900 font-bold shadow-sm border border-slate-100 text-sm md:text-lg flex items-center justify-center min-w-[140px] md:min-w-[200px]">
               {{ industry }}
             </span>
           </div>
@@ -25,8 +25,8 @@
 
         <!-- Row 2: Right -->
         <div class="flex whitespace-nowrap animate-marquee-right hover:pause-animation w-max">
-          <div v-for="i in 3" :key="`r2-${i}`" class="flex gap-6 pr-6">
-            <span v-for="industry in row2" :key="industry" class="px-8 py-4 bg-white rounded-full text-slate-900 font-bold shadow-sm border border-slate-100 text-lg flex items-center justify-center min-w-[200px]">
+          <div v-for="i in 3" :key="`r2-${i}`" class="flex gap-4 md:gap-6 pr-4 md:pr-6">
+            <span v-for="industry in row2" :key="industry" class="px-5 py-2.5 md:px-8 md:py-4 bg-white rounded-full text-slate-900 font-bold shadow-sm border border-slate-100 text-sm md:text-lg flex items-center justify-center min-w-[140px] md:min-w-[200px]">
               {{ industry }}
             </span>
           </div>
@@ -34,16 +34,16 @@
 
         <!-- Row 3: Left -->
         <div class="flex whitespace-nowrap animate-marquee-left-fast hover:pause-animation w-max">
-          <div v-for="i in 3" :key="`r3-${i}`" class="flex gap-6 pr-6">
-            <span v-for="industry in row3" :key="industry" class="px-8 py-4 bg-white rounded-full text-slate-900 font-bold shadow-sm border border-slate-100 text-lg flex items-center justify-center min-w-[200px]">
+          <div v-for="i in 3" :key="`r3-${i}`" class="flex gap-4 md:gap-6 pr-4 md:pr-6">
+            <span v-for="industry in row3" :key="industry" class="px-5 py-2.5 md:px-8 md:py-4 bg-white rounded-full text-slate-900 font-bold shadow-sm border border-slate-100 text-sm md:text-lg flex items-center justify-center min-w-[140px] md:min-w-[200px]">
               {{ industry }}
             </span>
           </div>
         </div>
         
         <!-- Fading Edges for smooth look -->
-        <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
-        <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
       </div>
     </section>
 
