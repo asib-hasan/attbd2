@@ -15,7 +15,7 @@
         <img src="/projects/1.png" alt="Chittagong Port Truck Scale" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-[800ms] ease-out" />
         
         <!-- Hover Overlay -->
-        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
+        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
           <div class="p-6">
             <h4 class="text-xl font-bold text-slate-900 mb-1">Chittagong Port Truck Scale</h4>
             <p class="text-slate-500 text-sm">Weighing Systems</p>
@@ -34,7 +34,7 @@
         <img src="/projects/2.png" alt="Sylhet Bridge Toll Plaza" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-[800ms] ease-out" />
         
         <!-- Hover Overlay -->
-        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
+        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
           <div class="p-6">
             <h4 class="text-xl font-bold text-slate-900 mb-1">Sylhet Bridge Toll Plaza</h4>
             <p class="text-slate-500 text-sm">Toll Management</p>
@@ -52,7 +52,7 @@
         <img src="/projects/3.png" alt="Natore Road Toll System" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-[800ms] ease-out" />
         
         <!-- Hover Overlay -->
-        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
+        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
           <div class="p-6">
             <h4 class="text-xl font-bold text-slate-900 mb-1">Natore Road Toll System</h4>
             <p class="text-slate-500 text-sm">Toll Management</p>
@@ -70,7 +70,7 @@
         <img src="/projects/4.png" alt="Gobrakura Land Port Weighbridge" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-[800ms] ease-out" />
         
         <!-- Hover Overlay -->
-        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
+        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
           <div class="p-6">
             <h4 class="text-xl font-bold text-slate-900 mb-1">Gobrakura Land Port Weighbridge</h4>
             <p class="text-slate-500 text-sm">Weighing Systems</p>
@@ -88,7 +88,7 @@
         <img src="/projects/5.png" alt="Highway Surveillance" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-[800ms] ease-out" />
         
         <!-- Hover Overlay -->
-        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
+        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
           <div class="p-6">
             <h4 class="text-xl font-bold text-slate-900 mb-1">Highway Surveillance</h4>
             <p class="text-slate-500 text-sm">Security Systems</p>
@@ -106,7 +106,7 @@
         <img src="/projects/toll-plaza.png" alt="Automated Toll Operations" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-[800ms] ease-out" />
         
         <!-- Hover Overlay -->
-        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
+        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur-md transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-stretch">
           <div class="p-6">
             <h4 class="text-xl font-bold text-slate-900 mb-1">Automated Toll Operations</h4>
             <p class="text-slate-500 text-sm">Toll Management</p>
