@@ -1,5 +1,5 @@
 <template>
-  <footer class="relative bg-slate-950 text-slate-400 border-t border-white/5 font-sans pt-20 pb-10">
+  <footer class="relative bg-white text-slate-600 border-t border-slate-200 font-sans pt-20 pb-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Top Section -->
@@ -7,7 +7,7 @@
         
         <!-- Column 1: About Us -->
         <div>
-          <h3 class="text-white font-bold mb-6 text-base tracking-wide">About Us</h3>
+          <h3 class="text-slate-900 font-bold mb-6 text-base tracking-wide">About Us</h3>
           <ul class="space-y-4">
             <li><NuxtLink to="/about" class="footer-link">Company Overview</NuxtLink></li>
             <li><NuxtLink to="/about#mission" class="footer-link">Vision & Mission</NuxtLink></li>
@@ -18,7 +18,7 @@
 
         <!-- Column 2: Solutions -->
         <div>
-          <h3 class="text-white font-bold mb-6 text-base tracking-wide">Solutions</h3>
+          <h3 class="text-slate-900 font-bold mb-6 text-base tracking-wide">Solutions</h3>
           <ul class="space-y-4">
             <li v-for="s in solutionLinks" :key="s.to">
               <NuxtLink :to="s.to" class="footer-link">{{ s.label }}</NuxtLink>
@@ -28,7 +28,7 @@
 
         <!-- Column 3: Products -->
         <div>
-          <h3 class="text-white font-bold mb-6 text-base tracking-wide">Products</h3>
+          <h3 class="text-slate-900 font-bold mb-6 text-base tracking-wide">Products</h3>
           <ul class="space-y-4">
             <li><NuxtLink to="/products/counters-classifiers" class="footer-link">Traffic Counters</NuxtLink></li>
             <li><NuxtLink to="/products" class="footer-link">Toll Systems</NuxtLink></li>
@@ -39,7 +39,7 @@
 
         <!-- Column 4: Quick Links -->
         <div>
-          <h3 class="text-white font-bold mb-6 text-base tracking-wide">Quick Links</h3>
+          <h3 class="text-slate-900 font-bold mb-6 text-base tracking-wide">Quick Links</h3>
           <ul class="space-y-4">
             <li><NuxtLink to="/contact" class="footer-link">Contact Us</NuxtLink></li>
             <li><NuxtLink to="/blogs" class="footer-link">News & Events</NuxtLink></li>
@@ -50,9 +50,9 @@
         <!-- Column 5: Brand & Social -->
         <div class="col-span-2 lg:col-span-1">
           <NuxtLink to="/" class="inline-block mb-6">
-            <img src="/logo.png" alt="ATT Logo" class="h-14 lg:h-16 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+            <img src="/logo.png" alt="ATT Logo" class="h-14 lg:h-16 w-auto" />
           </NuxtLink>
-          <p class="text-xs leading-relaxed mb-6">
+          <p class="text-sm leading-relaxed mb-6 text-slate-500">
             Asian Traffic Technologies Ltd. Providing end-to-end infrastructure solutions for a modern Bangladesh.
           </p>
           <div class="flex items-center gap-3">
@@ -67,10 +67,10 @@
       </div>
       
       <!-- Bottom Bar -->
-      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <p>© {{ currentYear }} Asian Traffic Technologies Ltd. All Rights Reserved.</p>
         <p>
-          Developed By <a href="https://creativetechpark.com/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white font-medium transition-colors">Creative Tech Park</a>
+          Developed By <a href="https://creativetechpark.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-bold transition-colors">Creative Tech Park</a>
         </p>
       </div>
     </div>
@@ -92,11 +92,11 @@ const solutionLinks = solutions.slice(0, 4).map(s => ({
 .footer-link {
   display: inline-block;
   font-size: 0.875rem;
-  color: #94a3b8; /* slate-400 */
+  color: #64748b; /* slate-500 */
   transition: all 0.2s ease;
 }
 .footer-link:hover {
-  color: #ffffff;
+  color: #2563eb; /* blue-600 */
   transform: translateX(2px);
 }
 
@@ -107,15 +107,15 @@ const solutionLinks = solutions.slice(0, 4).map(s => ({
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  color: #94a3b8;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #f8fafc; /* slate-50 */
+  color: #64748b; /* slate-500 */
+  border: 1px solid #e2e8f0; /* slate-200 */
   transition: all 0.2s ease;
 }
 .social-icon:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #2563eb; /* blue-600 */
   color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: #2563eb;
   transform: translateY(-2px);
 }
 </style>

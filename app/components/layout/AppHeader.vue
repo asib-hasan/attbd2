@@ -1,31 +1,35 @@
 <template>
   <!-- Main Navigation -->
-  <header :class="['fixed top-0 w-full z-50 transition-all duration-500', scrolled ? 'bg-white/80 backdrop-blur-xl shadow-[0_4px_30px_rgb(0,0,0,0.03)] py-3 border-b border-white/20' : 'bg-transparent py-6']">
+  <header :class="[
+    isHomePage ? 'fixed' : 'sticky',
+    'top-0 w-full z-50 transition-all duration-300',
+    (scrolled || !isHomePage) ? 'bg-white shadow-sm py-4 border-b border-slate-200' : 'bg-transparent py-6'
+  ]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
 
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center gap-3 flex-shrink-0 group z-20">
           <img src="/logo.png" alt="ATT Logo" class="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
-          <div :class="['hidden sm:block font-black text-xl leading-none tracking-tight transition-colors', scrolled ? 'text-slate-900' : 'text-white']">
+          <div :class="['hidden sm:block font-black text-2xl leading-none tracking-tight transition-colors', (scrolled || !isHomePage) ? 'text-slate-900' : 'text-white']">
             ATT
           </div>
         </NuxtLink>
 
         <!-- Desktop Nav -->
-        <nav class="hidden lg:flex items-center gap-1 z-20 bg-white/50 backdrop-blur-md px-2 py-1.5 rounded-full border border-slate-200/50 shadow-sm">
-          <NuxtLink to="/" class="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-white rounded-full transition-all duration-300" active-class="!text-blue-600 bg-white shadow-sm">Home</NuxtLink>
-          <NuxtLink to="/about" class="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-white rounded-full transition-all duration-300" active-class="!text-blue-600 bg-white shadow-sm">About Us</NuxtLink>
-          <NuxtLink to="/solutions" class="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-white rounded-full transition-all duration-300" active-class="!text-blue-600 bg-white shadow-sm">Solutions</NuxtLink>
-          <NuxtLink to="/products" class="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-white rounded-full transition-all duration-300" active-class="!text-blue-600 bg-white shadow-sm">Products</NuxtLink>
-          <NuxtLink to="/services" class="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-white rounded-full transition-all duration-300" active-class="!text-blue-600 bg-white shadow-sm">Services</NuxtLink>
-          <NuxtLink to="/projects" class="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-white rounded-full transition-all duration-300" active-class="!text-blue-600 bg-white shadow-sm">Projects</NuxtLink>
-          <NuxtLink to="/blogs" class="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-white rounded-full transition-all duration-300" active-class="!text-blue-600 bg-white shadow-sm">Blog</NuxtLink>
+        <nav class="hidden lg:flex items-center gap-8 z-20">
+          <NuxtLink to="/" class="text-sm font-semibold transition-colors duration-300" :class="(scrolled || !isHomePage) ? 'text-slate-600 hover:text-blue-600' : 'text-white/90 hover:text-white'" active-class="!text-blue-600">Home</NuxtLink>
+          <NuxtLink to="/about" class="text-sm font-semibold transition-colors duration-300" :class="(scrolled || !isHomePage) ? 'text-slate-600 hover:text-blue-600' : 'text-white/90 hover:text-white'" active-class="!text-blue-600">About Us</NuxtLink>
+          <NuxtLink to="/solutions" class="text-sm font-semibold transition-colors duration-300" :class="(scrolled || !isHomePage) ? 'text-slate-600 hover:text-blue-600' : 'text-white/90 hover:text-white'" active-class="!text-blue-600">Solutions</NuxtLink>
+          <NuxtLink to="/products" class="text-sm font-semibold transition-colors duration-300" :class="(scrolled || !isHomePage) ? 'text-slate-600 hover:text-blue-600' : 'text-white/90 hover:text-white'" active-class="!text-blue-600">Products</NuxtLink>
+          <NuxtLink to="/services" class="text-sm font-semibold transition-colors duration-300" :class="(scrolled || !isHomePage) ? 'text-slate-600 hover:text-blue-600' : 'text-white/90 hover:text-white'" active-class="!text-blue-600">Services</NuxtLink>
+          <NuxtLink to="/projects" class="text-sm font-semibold transition-colors duration-300" :class="(scrolled || !isHomePage) ? 'text-slate-600 hover:text-blue-600' : 'text-white/90 hover:text-white'" active-class="!text-blue-600">Projects</NuxtLink>
+          <NuxtLink to="/blogs" class="text-sm font-semibold transition-colors duration-300" :class="(scrolled || !isHomePage) ? 'text-slate-600 hover:text-blue-600' : 'text-white/90 hover:text-white'" active-class="!text-blue-600">Blog</NuxtLink>
         </nav>
 
         <div class="hidden lg:flex items-center z-20">
-          <NuxtLink to="/contact" class="px-7 py-2.5 bg-slate-900 text-white text-sm font-bold rounded-full hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
-            Get a Quote
+          <NuxtLink to="/contact" class="px-7 py-2.5 bg-blue-600 text-white text-sm font-bold rounded-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/30 transition-all transform hover:-translate-y-0.5">
+            Contact Us
           </NuxtLink>
         </div>
 
@@ -34,10 +38,10 @@
           @click="mobileOpen = !mobileOpen"
           aria-label="Toggle menu"
         >
-          <svg v-if="!mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg v-if="!mobileOpen" class="w-6 h-6" :class="(scrolled || !isHomePage) ? 'text-slate-900' : 'text-white'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
           </svg>
-          <svg v-else class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg v-else class="w-6 h-6" :class="(scrolled || !isHomePage) ? 'text-slate-900' : 'text-white'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
           </svg>
         </button>
@@ -55,7 +59,7 @@
           <NuxtLink to="/services" class="mobile-nav-link" @click="mobileOpen = false">Services</NuxtLink>
           <NuxtLink to="/projects" class="mobile-nav-link" @click="mobileOpen = false">Projects</NuxtLink>
           <NuxtLink to="/blogs" class="mobile-nav-link" @click="mobileOpen = false">Blog</NuxtLink>
-          <NuxtLink to="/contact" class="mt-4 px-6 py-3 bg-slate-900 text-white text-sm font-bold rounded-full text-center hover:bg-blue-600 transition-colors" @click="mobileOpen = false">Get a Quote</NuxtLink>
+          <NuxtLink to="/contact" class="mt-4 px-6 py-3 bg-blue-600 text-white text-sm font-bold rounded-lg text-center hover:bg-blue-700 transition-colors" @click="mobileOpen = false">Contact Us</NuxtLink>
         </div>
       </div>
     </Transition>
@@ -63,10 +67,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const mobileOpen = ref(false)
 const scrolled = ref(false)
+
+// Check if we are on the homepage
+const isHomePage = computed(() => route.path === '/')
 
 const handleScroll = () => {
   scrolled.value = window.scrollY > 20
