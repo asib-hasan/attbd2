@@ -22,7 +22,7 @@
         
         <!-- Refined Typography -->
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/60 leading-[1.1] tracking-tight mb-6 animate-fade-in-up delay-100">
-          Transforming Nations
+          ASIAN TRAFFIC TECHNOLOGIES
         </h1>
         
         <p class="text-lg md:text-xl text-slate-300/90 leading-relaxed max-w-2xl font-light mb-10 animate-fade-in-up delay-200">

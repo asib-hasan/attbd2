@@ -33,7 +33,7 @@
           <!-- Overlapping Image -->
           <div class="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-2xl overflow-hidden shadow-2xl border-4 border-white group z-20">
             <div class="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-            <img src="/More/1.jpg" alt="Civil Engineering" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            <img src="/More/shams_navigation.png" alt="Civil Engineering" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
           </div>
           
           <!-- Decorative element -->
